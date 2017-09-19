@@ -1,2 +1,14 @@
-const logger = require('./logger')
-logger.info('SUPPEEEEER!')
+const produto = {
+    nome: 'Caneta ',
+    preco: 1.90,
+    desconto: 0.05
+}
+
+function clone(objeto){
+    return { ...objeto }
+}
+
+const novoProduto = clone(produto)
+novoProduto.nome = 'Lapis'
+
+console.log(produto. novoProduto)
